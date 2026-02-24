@@ -7,11 +7,6 @@ export const listStyles = StyleSheet.create({
     backgroundColor: colors.background,
     padding: 20,
   },
-  backButton: {
-    fontSize: 16,
-    color: colors.primary,
-    marginBottom: 16,
-  },
   title: {
     fontSize: 22,
     fontWeight: "bold",

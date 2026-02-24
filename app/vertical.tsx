@@ -1,6 +1,6 @@
-import { useRouter } from "expo-router";
-import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import CustomBackButton from "../components/CustomBackButton";
 import { listStyles } from "../styles/listStyles";
 
 const items = [
@@ -15,13 +15,9 @@ const items = [
 ];
 
 export default function VerticalScreen() {
-  const router = useRouter();
-
   return (
     <SafeAreaView style={listStyles.container}>
-      <TouchableOpacity onPress={() => router.back()}>
-        <Text style={listStyles.backButton}>← Back</Text>
-      </TouchableOpacity>
+      <CustomBackButton />
 
       <Text style={listStyles.title}>Vertical Gallery</Text>
 

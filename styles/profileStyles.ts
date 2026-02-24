@@ -7,14 +7,6 @@ export const profileStyles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: colors.background,
     padding: 20,
-    paddingTop: 60,
-  },
-  backButton: {
-    position: "absolute",
-    top: 10,
-    left: 20,
-    fontSize: 16,
-    color: colors.primary,
   },
   avatar: {
     width: 120,

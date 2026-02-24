@@ -1,12 +1,11 @@
-import { useRouter } from "expo-router";
 import { useState } from "react";
-import { Image, Text, TouchableOpacity } from "react-native";
+import { Image, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import CustomBackButton from "../components/CustomBackButton";
 import CustomButton from "../components/CustomButton";
 import { profileStyles } from "../styles/profileStyles";
 
 export default function ProfileScreen() {
-  const router = useRouter();
   const [name, setName] = useState("John Doe");
   const [bio, setBio] = useState(
     "React Native enthusiast. Building cool stuff with Expo.",
@@ -26,9 +25,7 @@ export default function ProfileScreen() {
 
   return (
     <SafeAreaView style={profileStyles.container}>
-      <TouchableOpacity onPress={() => router.back()}>
-        <Text style={profileStyles.backButton}>← Back</Text>
-      </TouchableOpacity>
+      <CustomBackButton />
 
       <Image
         source={{ uri: "https://picsum.photos/200/200?random=99" }}
