@@ -11,7 +11,7 @@ export default function CustomButton({
   title,
   onPress,
   variant = "primary",
-}: Props) {
+}: Readonly<Props>) {
   return (
     <TouchableOpacity
       style={[styles.button, variant === "danger" && styles.danger]}

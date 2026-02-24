@@ -13,12 +13,12 @@ export default function ProfileScreen() {
   const [edited, setEdited] = useState(false);
 
   const handleEdit = () => {
-    if (!edited) {
-      setName("Jane Doe");
-      setBio("Full-stack developer. Coffee lover. Open source contributor.");
-    } else {
+    if (edited) {
       setName("John Doe");
       setBio("React Native enthusiast. Building cool stuff with Expo.");
+    } else {
+      setName("Jane Doe");
+      setBio("Full-stack developer. Coffee lover. Open source contributor.");
     }
     setEdited(!edited);
   };
