@@ -1,5 +1,7 @@
 # Welcome to your Expo app 👋
 
+[![React Doctor](https://www.react.doctor/share/badge?p=routerlab&s=99&w=1&f=1)](https://www.react.doctor/share?p=routerlab&s=99&w=1&f=1)
+
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
