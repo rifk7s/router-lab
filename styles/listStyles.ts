@@ -15,22 +15,20 @@ export const listStyles = StyleSheet.create({
   },
   // Vertical
   card: {
-    flexDirection: "row",
     backgroundColor: colors.white,
     borderRadius: 12,
-    marginBottom: 12,
+    marginBottom: 16,
     overflow: "hidden",
     boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.1)",
   },
   imageVertical: {
-    width: 80,
-    height: 80,
+    width: "100%",
+    height: 180,
   },
   cardTextVertical: {
-    padding: 16,
+    padding: 12,
     fontSize: 16,
     color: colors.text,
-    alignSelf: "center",
   },
   // Horizontal
   cardHorizontal: {

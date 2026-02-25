@@ -7,4 +7,5 @@ export const colors = {
   text: "#333333",
   lightGray: "#CCCCCC",
   danger: "#E74C3C",
+  test: "#2d2e2e",
 };
